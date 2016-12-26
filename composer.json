@@ -1,0 +1,25 @@
+{
+    "name": "853868671/ztdh",
+    "description": "The Simple Framework.",
+    "keywords": ["framework", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "王卫东",
+            "email": "a853868671@gmail.com"
+        }
+    ],
+    "minimum-stability": "beta",    
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "monolog/monolog": "1.2.*",
+        "league/route": "dev-master"
+    },	
+    "autoload": {
+        "psr-4": {
+            "App\\": "App/"
+        }
+    }    
+}
