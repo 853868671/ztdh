@@ -7,7 +7,7 @@ use App\Sys\Controller;
 */
 class CrossDomain extends Controller
 {
-    const url='https://dev.zhinenglicai.com/';
+    const url='https://xxx.xxx.com/';
     
     function __construct()
     {
