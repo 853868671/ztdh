@@ -11,6 +11,7 @@ $arr_url =array(
 );
 
 
+
 if(is_array($uri_data) && !empty($uri_data[0]))
 {
 	$arr_url['controller'] = $uri_data[0];
@@ -39,7 +40,6 @@ if(is_array($uri_data) && !empty($uri_data[0]))
 	$goto = new $fun;	
 }
 
-$goto->$arr_url['method']();
-
+$goto->{$arr_url["method"]}();
 
 ?>
