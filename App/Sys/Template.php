@@ -7,6 +7,7 @@ class Template {
     private $template_base;
 
     public function __construct() {
+        header('X-Powered-By:a853868671@gmail.com');
         $this->template_base = BASE_DIR.APP_PATH.'/Views/';
     }
 
