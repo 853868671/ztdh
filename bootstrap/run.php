@@ -32,6 +32,13 @@ if(is_array($uri_data) && !empty($uri_data[0]))
 		if(!method_exists($goto, $arr_url['method'])){
 			echo '404 not found 2';//直接输出页面错误信息 
 			exit;  
+		} else {
+			if(count($uri_data) % 2 == 0){
+                //将参数进行处理
+                for($i=2;$i<count($uri_data);$i+=2){
+                	$_GET[$uri_data[$i]] = $uri_data[$i+1];
+                }
+            }
 		}
 	}
 } else {
